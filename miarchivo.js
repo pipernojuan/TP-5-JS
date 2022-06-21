@@ -43,7 +43,15 @@ function capturar (){
 };
 
 
-// DOM
+// DOM para Contador
 
-let card1 = document.getElementById ('card1');
-card1.innerHTML = 'jaja';
+const btnAgregar = document.querySelector('.btn-info');
+const span = document.getElementById('span');
+let contador = 0;
+
+btnAgregar.addEventListener('click', () => {
+    console.log('Diste click efectivamente');
+    contador++;
+    span.textContent = contador
+});
+
