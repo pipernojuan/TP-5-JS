@@ -46,6 +46,7 @@ function capturar (){
 // DOM para Contador
 
 const btnAgregar = document.querySelector('.btn-info');
+const btnDisminuir = document.querySelector ('.btn-danger');
 const span = document.getElementById('span');
 let contador = 0;
 
@@ -55,3 +56,8 @@ btnAgregar.addEventListener('click', () => {
     span.textContent = contador
 });
 
+btnDisminuir.addEventListener('click', () => {
+    console.log('Diste click efectivamente');
+    contador--;
+    span.textContent = contador
+});
